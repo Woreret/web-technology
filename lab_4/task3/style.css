@@ -1,0 +1,27 @@
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+ul li ul {
+    list-style-type: none;
+}
+
+.vegetables-list {
+    list-style-image: url("li.svg");
+}
+
+.berries-list {
+    list-style-type: square;
+}
+
+.berries-list a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}
