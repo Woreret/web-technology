@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 30px 0;
+    background-color: #e8eef7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #1f2d3d;
+}
+
+form {
+    box-sizing: border-box;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+}
+
+h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #2b4c7e;
+}
+
+fieldset {
+    margin: 0 0 20px;
+    padding: 15px 20px;
+    background-color: #f4f7fb;
+    border: 2px solid #9db4d6;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: 700;
+    color: #2b4c7e;
+}
+
+p {
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+label {
+    font-weight: 700;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #9db4d6;
+    background-color: white;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #2b4c7e;
+    color: white;
+    font-size: 16px;
+}
+
+button[type="reset"] {
+    background-color: #7f8c9d;
+}

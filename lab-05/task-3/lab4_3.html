@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <h1>Анкета</h1>
+
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <p>
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Ім'я" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" required>
+            </p>
+            <p>
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380\d{9}">
+            </p>
+            <p>
+                <label for="date">Дата народження</label>
+                <input type="date" id="date" name="date">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Вибір</legend>
+            <p>
+                Стать:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Чоловіча</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Жіноча</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Інша</label>
+            </p>
+            <p>
+                Освіта:
+                <input type="radio" id="school" name="education" value="school">
+                <label for="school">Середня</label>
+                <input type="radio" id="college" name="education" value="college" checked>
+                <label for="college">Фахова</label>
+                <input type="radio" id="university" name="education" value="university">
+                <label for="university">Вища</label>
+            </p>
+            <p>
+                Інтереси:
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Музика</label>
+                <input type="checkbox" id="sport" name="interest" value="sport">
+                <label for="sport">Спорт</label>
+                <input type="checkbox" id="travel" name="interest" value="travel">
+                <label for="travel">Подорожі</label>
+                <input type="checkbox" id="books" name="interest" value="books">
+                <label for="books">Книги</label>
+            </p>
+            <p>
+                <label for="city">Місто</label>
+                <select id="city" name="city">
+                    <option value="kyiv">Київ</option>
+                    <option value="lviv">Львів</option>
+                    <option value="chernivtsi" selected>Чернівці</option>
+                    <option value="odesa">Одеса</option>
+                    <option value="kharkiv">Харків</option>
+                </select>
+            </p>
+            <p>
+                <label for="languages">Мови</label>
+                <select id="languages" name="languages" multiple>
+                    <option value="uk">Українська</option>
+                    <option value="en">Англійська</option>
+                    <option value="de">Німецька</option>
+                    <option value="pl">Польська</option>
+                    <option value="ro">Румунська</option>
+                    <option value="fr">Французька</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Додатково</legend>
+            <p>
+                <label for="about">Про себе</label>
+                <textarea id="about" name="about" rows="4" placeholder="Розкажіть про себе"></textarea>
+            </p>
+            <p>
+                <label for="files">Аудіо</label>
+                <input type="file" id="files" name="files" accept="audio/*" multiple>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Надіслати</button>
+            <button type="reset">Очистити</button>
+        </p>
+    </form>
+</body>
+</html>
