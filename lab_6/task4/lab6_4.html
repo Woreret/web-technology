@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4 - Навігаційні панелі</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="horizontal-nav">
+        <ul>
+            <li class="active"><a href="#"><span class="material-icons">home</span></a></li>
+            <li>
+                <a href="#"><span class="material-icons">search</span></a>
+                <ul>
+                    <li><a href="#">Пошук курсів</a></li>
+                    <li><a href="#">Пошук статей</a></li>
+                    <li><a href="#">Розширений пошук</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">mail</span></a>
+                <ul>
+                    <li><a href="#">Вхідні</a></li>
+                    <li><a href="#">Надіслані</a></li>
+                    <li><a href="#">Чернетки</a></li>
+                </ul>
+            </li>
+            <li class="nav-right">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <ul>
+                    <li><a href="#">Профіль</a></li>
+                    <li><a href="#">Налаштування</a></li>
+                    <li><a href="#">Вихід</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="vertical-nav">
+        <ul>
+            <li class="active">
+                <a href="#"><span class="material-icons">home</span> Home</a>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">article</span> About</a>
+                <ul>
+                    <li><a href="#">Наша команда</a></li>
+                    <li>
+                        <a href="#">Історія</a>
+                        <ul>
+                            <li><a href="#">Заснування</a></li>
+                            <li><a href="#">Розвиток</a></li>
+                            <li><a href="#">Сьогодення</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Місія</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">local_cafe</span> Work With Me</a>
+                <ul>
+                    <li><a href="#">Вакансії</a></li>
+                    <li>
+                        <a href="#">Стажування</a>
+                        <ul>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Backend</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Партнерство</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">folder</span> Projects</a>
+                <ul>
+                    <li><a href="#">Веб-сайти</a></li>
+                    <li>
+                        <a href="#">Мобільні додатки</a>
+                        <ul>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Android</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Дизайн-системи</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">contact_support</span> Contact</a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <nav class="sticky-nav">
+            <a href="#section1" class="active">Огляд</a>
+            <a href="#section2">Особливості</a>
+            <a href="#section3">Контакти</a>
+        </nav>
+
+        <section id="section1" class="content-section">
+            <h2>Огляд позиціонування</h2>
+            <p>У цьому завданні продемонстровано фіксовану верхню панель навігації (fixed), вертикальне трирівневе меню з повною висотою (fixed, 100vh) та липку навігаційну панель (sticky), яка прилипає до верху сторінки під час скролу.</p>
+            <p>Останній пункт горизонтальної панелі вирівняний по правому краю за допомогою властивості float: right.</p>
+        </section>
+
+        <section id="section2" class="content-section">
+            <h2>Багаторівневе випадне меню</h2>
+            <p>Вертикальне меню містить три рівні вкладеності: перший рівень відображається постійно з піктограмами та текстом. Другий та третій рівні з'являються при наведенні курсору миші завдяки абсолютному позиціонуванню відносно батьківського пункту.</p>
+            <p>Для оформлення активних пунктів використано клас active, а для інтерактивності — псевдоклас :hover.</p>
+        </section>
+
+        <section id="section3" class="content-section">
+            <h2>Контактна інформація</h2>
+            <p>Сторінка має достатню висоту для перевірки поведінки fixed та sticky позиціонування при прокручуванні.</p>
+            <p>Верхня та бічна навігаційні панелі залишаються зафіксованими на екрані незалежно від положення скролу.</p>
+        </section>
+    </main>
+</body>
+</html>

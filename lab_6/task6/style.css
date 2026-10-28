@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+a {
+    color: #757575;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #757575;
+    text-decoration: underline;
+}
+
+img {
+    border-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav__link {
+    color: #5f6368;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.nav__link:hover {
+    color: #202124;
+    text-decoration: underline;
+}
+
+.nav__link:focus,
+.nav-details__btn:focus,
+.nav-icon:focus,
+.more__btn:focus,
+.app-item a:focus,
+.popup__container:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4d90fe;
+    border-radius: 4px;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    background-color: #f1f3f4;
+}
+
+.nav-icon img {
+    border-radius: 50%;
+}
+
+.nav-details {
+    position: relative;
+    user-select: none;
+}
+
+.nav-details__btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(images/popup-button.png) no-repeat center;
+    background-size: 18px 18px;
+}
+
+.nav-details__btn:hover {
+    background-color: #f1f3f4;
+}
+
+.nav-details__popup {
+    position: absolute;
+    top: 45px;
+    right: -60px;
+    z-index: 1000;
+}
+
+.popup {
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 66px;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    transform: rotate(45deg);
+}
+
+.popup__container {
+    position: relative;
+    max-height: 430px;
+    overflow-y: auto;
+    border-radius: 8px;
+    outline: none;
+}
+
+.popup__container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f1f1f1;
+}
+
+.popup__container::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 4px;
+}
+
+.apps__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+.apps__item {
+    width: calc(100% / 3);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.app-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 4px;
+    color: #3c4043;
+    font-size: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.app-item a:hover {
+    background-color: #f8f9fa;
+    border-color: #dadce0;
+    text-decoration: none;
+}
+
+.app-item a img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.more[open] {
+    border-top: 1px solid #ebebeb;
+}
+
+.more[open] .more__btn {
+    display: none;
+}
+
+.more__btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #1a73e8;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ebebeb;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+}
+
+.more__btn:hover {
+    background-color: #f1f3f4;
+}
+
+.more__apps-link {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px solid #ebebeb;
+}
+
+.more__apps-link a {
+    color: #1a73e8;
+    font-size: 13px;
+}
+
+.more__apps-link a:hover {
+    text-decoration: underline;
+}
